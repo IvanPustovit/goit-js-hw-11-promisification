@@ -3,8 +3,8 @@
 const delay = ms => {
     return new Promise(resolve => {
         setTimeout(()=>{
-            logger(ms)
-        })
+            resolve(ms)
+        },ms)
     })
   };
   
